@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt Semestralny - Biblioteka</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Aplikacja Biblioteczna</h1>
+        <p>Autor: <strong>Yaroslav Kalashnyk</strong> | Indeks: <strong>77319</strong></p>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Dodaj nową książkę</h2>
+            <form id="book-form">
+                <input type="text" id="title" placeholder="Tytuł książki *" required>
+                <input type="text" id="author" placeholder="Autor *" required>
+                <textarea id="description" rows="4" placeholder="Krótki opis"></textarea>
+                <button type="submit">Zapisz książkę</button>
+            </form>
+        </section>
+
+        <section class="list-section">
+            <h2>Lista książek</h2>
+            <div id="book-list">
+                <!-- Lista książek będzie generowana tutaj przez JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
